@@ -39,14 +39,38 @@ label {
 }
 #nav-links-right {
     border:1px solid red;
+    height:70%;
+    width:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-links-right .nav-link {
+    margin:10px;
+}
+#nine-dots {
+    height:23px;
+    width:23px;
+    color:#5f6368;
+}
+#nine-dots path {
+    color:#5f6368;
+}
+#account-logo {
+    clip-path: circle();
+    filter: grayscale(80%);
+    height:30px;
+    width:30px;
+}
+#account-logo img {
+    height:100%;
+    width:100%;
 }
 .nav-link {
     border:1px solid blue;
 }
 
-#nine-dots {
-    height:80px;
-}
+
 
 
 #main {
