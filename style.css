@@ -9,23 +9,28 @@ body {
 label {
     position:absolute;
 }
+.filler-div {
+    height:7000px;
+    flex-grow: 1;
+}
+.filler-div:nth-child(1) {
+    max-height:00px;
+}
 #inbody-container {
     height:100%;
     width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:space-between;
 }
 #navbar {
     height:80px;
     width:100%;
-    border:1px solid black;
     display:flex;
     justify-content: space-between;
+    flex-grow: 0;
 }
 #nav-links-left {
-    border:1px solid red;
     height:70%;
     width:150px;
     display: flex;
@@ -39,7 +44,6 @@ label {
     margin-left: 0px;
 }
 #nav-links-right {
-    border:1px solid red;
     height:70%;
     width:250px;
     display: flex;
@@ -67,12 +71,8 @@ label {
     height:100%;
     width:100%;
 }
-.nav-link {
-    border:1px solid blue;
-}
 
 #main {
-    border:1px solid pink;
     height:100%;
     width:100%;
     margin:0 auto;
@@ -85,7 +85,6 @@ label {
     margin-bottom:20px;
 }
 #main-form {
-    border:1px solid blue;
     width: 100%;
     display:flex;
     flex-wrap: wrap;
@@ -95,7 +94,7 @@ label {
     position: relative;
     border-radius: 100px;
     height:45px;
-    width:650px;
+    width:600px;
     margin:0 auto;
     padding-left: 10px;
     padding-right:10px;
@@ -104,17 +103,24 @@ label {
     border-radius: 100px;
     height:100%;
     width:100%;
-    border:1px solid black;
+    border:1px solid lightgray;
+    padding-left: 50px;
+    font-size:13pt;
 }
+/*
+TODO:: Remove link styling (remove blue & underlines)
+TODO:: Add hover effects for nav-links,search-bar,buttons
+TODO:: Center (vertically & horizontally) nav-links
+TODO:: Add X button whenever there is text inside the box
+*/
 #search-d-container {
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
     position:absolute;
-    top:10px;
-    left:20px;
+    top:15px;
+    left:30px;
 }
 #buttons-container {
-    border:1px solid purple;
     width:100%;
     height: 100px;
     display:flex;
@@ -124,21 +130,24 @@ label {
 #submit,#lucky-button {
     width:120px;
     height:33px;
-    border:1px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
+    border:1px solid lightgrey;
 }
-
+#submit {
+    margin-right:20px;
+}
+#lucky-button {
+    margin-left:20px;
+}
 
 #footer {
     background-color: #92969b;
-    height:50px;
+    min-height:50px;
     width:100%;
     display:flex;
     justify-content: space-between;
+    flex-grow: 0;
 }
 #footer-links-center,#footer-links-right,#footer-links-left {
-    border:1px solid black;
     display:flex;
     align-items: center;
 }
