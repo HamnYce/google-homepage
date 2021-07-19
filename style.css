@@ -1,3 +1,10 @@
+/*
+TODO:: Remove link styling (remove blue & underlines)
+TODO:: Add hover effects for nav-links,search-bar,buttons
+TODO:: Center (vertically & horizontally) nav-links
+TODO:: Add X button whenever there is text inside the box
+TODO:: Add media query to adjust footer elements
+*/
 * {
     padding:0;
     margin:0;
@@ -5,9 +12,15 @@
 body {
     height:100vh;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 label {
     position:absolute;
+}
+a {
+    text-decoration: none;
+    color:rgb(27, 27, 27);
+    font-size: 10pt;
 }
 .filler-div {
     height:7000px;
@@ -28,6 +41,7 @@ label {
     width:100%;
     display:flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 0;
 }
 #nav-links-left {
@@ -58,18 +72,17 @@ label {
     width:23px;
     color:#5f6368;
 }
-#nine-dots path {
-    color:#5f6368;
-}
 #account-logo {
     clip-path: circle();
-    filter: grayscale(80%);
     height:30px;
     width:30px;
 }
 #account-logo img {
     height:100%;
     width:100%;
+}
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 #main {
@@ -94,7 +107,7 @@ label {
     position: relative;
     border-radius: 100px;
     height:45px;
-    width:600px;
+    width:575px;
     margin:0 auto;
     padding-left: 10px;
     padding-right:10px;
@@ -107,12 +120,7 @@ label {
     padding-left: 50px;
     font-size:13pt;
 }
-/*
-TODO:: Remove link styling (remove blue & underlines)
-TODO:: Add hover effects for nav-links,search-bar,buttons
-TODO:: Center (vertically & horizontally) nav-links
-TODO:: Add X button whenever there is text inside the box
-*/
+
 #search-d-container {
     width:20px;
     height:20px;
@@ -126,17 +134,22 @@ TODO:: Add X button whenever there is text inside the box
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;;
 }
 #submit,#lucky-button {
-    width:120px;
-    height:33px;
-    border:1px solid lightgrey;
+    width:fit-content;
+    height:35px;
+    background-color: rgb(250, 250, 250);
+    border:1px solid rgb(250, 250, 250);
+    border-radius: 4px;
+    font-size: 10.5pt;
+    padding: 3px 14px;
 }
 #submit {
-    margin-right:20px;
+    margin-right:6px;
 }
 #lucky-button {
-    margin-left:20px;
+    margin-left:6px;
 }
 
 #footer {
@@ -145,29 +158,39 @@ TODO:: Add X button whenever there is text inside the box
     width:100%;
     display:flex;
     justify-content: space-between;
-    flex-grow: 0;
 }
 #footer-links-center,#footer-links-right,#footer-links-left {
     display:flex;
     align-items: center;
 }
+
 #footer-links-left {
     order:0;
+    padding-left: 15px;
 }
 #footer-links-left .footer-link {
-    margin-left:17px;
-    margin-right:17px;
+    padding-left:17px;
+    padding-right:17px;
 }
 #footer-links-center {
     order:1;
 }
 #footer-links-right .footer-link {
-    margin-left:15px;
-    margin-right:15px;
+    padding-left:15px;
+    padding-right:15px;
 }
 #footer-links-right {
     order:2;
 }
-
+.footer-link {
+    display:inline-block;
+    height:100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
 /* @media query for when
 size is small */
