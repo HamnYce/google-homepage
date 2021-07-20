@@ -9,24 +9,80 @@
 </head>
 <body>
     <headerv id="header" >
-        <img src="" alt="">
         <div id="top-header">
-            <div>
-                <form action="">
-
-                </form>
+            <img src="" alt="Google Logo">
+            <form id="header-form" action="">
+                
+            </form>
+            <div id="utility-tools">
+                <a class="header-link" href="#">
+                    <!-- settings d -->
+                </a>
+                <a class="header-link" href="#">
+                    <!-- nine-dots d -->
+                </a>
+                <a class="header-link" href="#">
+                    <!-- account logo -->
+                </a>
             </div>
         </div>
-        <nav id="navbar-results" >
 
-        </nav>
+        <div id="bottom-header">
+            <nav id="navbar-results" >
+                <a class="nav-link" href="#">
+                    <!-- img + "All" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- img + "News" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- img + "Videos" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- img + "Maps" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- img + "Shopping" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- img + "More" -->
+                </a>
+                <a class="nav-link" href="#">
+                    <!-- "Tools" + flex-end (or actually float right would be easier) -->
+                </a>
+            </nav>
+        </div>
+
     </header>
-    <main>
-        <!--creates flex or grid w/ auto-row  
-            main should resize automatically
-             with each extra result div
-            
+    <div id="main-container">
+    <!--add padding-left
+        width set (for everything except for utility section (resize width to see))
         -->
-    </main>
+        <div id="view-counter-container">
+
+        </div>
+        <main id="main">
+            <!--creates flex or grid w/ auto-row  
+                main should resize automatically
+                with each extra result div
+            -->
+            <section class="result-section-wrapper">
+                <!-- should be repeatable and #main should adjust - infinitely -->
+            </section>
+        </main>
+        <div id="related-searches-container">
+    
+        </div>
+        <div id="page-selector-container">
+    
+        </div>
+        <div id="unrelated-buttons">
+    
+        </div>
+    </div>
+    
+    <footer id="footer">
+        
+    </footer>
 </body>
 </html>
