@@ -1,7 +1,4 @@
 /*
-TODO:: Remove link styling (remove blue & underlines)
-TODO:: Add hover effects for nav-links,search-bar,buttons
-TODO:: Center (vertically & horizontally) nav-links
 TODO:: Add X button whenever there is text inside the box
 TODO:: Add media query to adjust footer elements
 */
@@ -94,39 +91,46 @@ a {
     align-items:center;
 }
 #google-logo {
-    height:90px;
+    height:95px;
     margin-bottom:20px;
 }
 #main-form {
     width: 100%;
     display:flex;
     flex-wrap: wrap;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
 }
 #search-bar-container {
     position: relative;
     border-radius: 100px;
     height:45px;
-    width:575px;
+    width:550px;
     margin:0 auto;
-    padding-left: 10px;
-    padding-right:10px;
+    padding-left: 20px;
+    padding-right:70px;
 }
 #search-bar {
     border-radius: 100px;
     height:100%;
     width:100%;
-    border:1px solid lightgray;
+    border:1px solid rgb(228, 228, 228);
     padding-left: 50px;
     font-size:13pt;
+    outline: none;
 }
-
+#search-bar:hover {
+    box-shadow: 0px 0px 3px 1.5px #e0e0e0;
+}
+#search-bar:focus {
+    box-shadow: 0px 0px 3px 1.5px #e0e0e0;
+}
 #search-d-container {
     width:20px;
     height:20px;
     position:absolute;
     top:15px;
     left:30px;
+    filter:opacity(0.4);
 }
 #buttons-container {
     width:100%;
@@ -134,7 +138,6 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;;
 }
 #submit,#lucky-button {
     width:fit-content;
@@ -145,6 +148,9 @@ a {
     font-size: 10.5pt;
     padding: 3px 14px;
 }
+#submit:hover,#lucky-button:hover {
+    box-shadow: 0px 0px 3px 1.5px #e0e0e0;
+}
 #submit {
     margin-right:6px;
 }
@@ -153,41 +159,51 @@ a {
 }
 
 #footer {
-    background-color: #92969b;
-    min-height:50px;
+    background-color: #f0f0f0;
+    min-height:47px;
     width:100%;
     display:flex;
     justify-content: space-between;
 }
 #footer-links-center,#footer-links-right,#footer-links-left {
     display:flex;
-    align-items: center;
+
 }
 
 #footer-links-left {
     order:0;
-    padding-left: 15px;
+    padding-left: 18px;
 }
 #footer-links-left .footer-link {
-    padding-left:17px;
-    padding-right:17px;
+    padding-left:15px;
+    padding-right:15px;
 }
 #footer-links-center {
     order:1;
+
+}
+#footer-links-center img {
+    width: 12px;
+    padding-right: 10px;
+}
+#footer-links-right {
+    padding-right: 18px;
+    padding-left: 70px;
+    order:2;
 }
 #footer-links-right .footer-link {
     padding-left:15px;
     padding-right:15px;
 }
-#footer-links-right {
-    order:2;
-}
+
 .footer-link {
     display:inline-block;
     height:100%;
     width: fit-content;
     display: flex;
     align-items: center;
+    color: #747474;
+    font-size: 10.5pt;
 }
 .footer-link:hover {
     text-decoration: underline;
