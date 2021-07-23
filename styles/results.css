@@ -40,6 +40,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+#utility-links-container,#safe-search {
+    padding-right: 40px;
+}
 /* temp so i can work on other stuff */
 svg {width:16px;}#account-logo{width: 20px;}
 
@@ -63,6 +66,7 @@ svg {width:16px;}#account-logo{width: 20px;}
     flex-wrap: nowrap;
     height: 100%;
     width: 100%;
+    margin-right: 140px;
 }
 .nav-link {
     display: flex;
@@ -77,12 +81,48 @@ svg {width:16px;}#account-logo{width: 20px;}
     text-decoration: none;
     font-size: 10.5pt;
 }
+.nav-link:first-child {
+    padding-left: 0;
+}
 .nav-link:last-child {
     margin-left: 130px;
 }
 .nav-link svg {
     margin-right: 4px;
 }
-#safe-search {
+
+
+#main-container {
+    border:1px solid green;
+    max-width:100%;
+    display:flex;
+    flex-direction: column;
+    padding-left: 170px;
+    max-width:600px;
+}
+#view-counter-container {
+    border:1px solid blue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid black;
+    max-width: 100%;
+}
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
     
+    height: fit-content;
+}
+
+
+
+#footer {
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+    padding-left:170px;
 }
