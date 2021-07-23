@@ -1,3 +1,10 @@
+/*
+TODO:: Adjust the margin in the top and bottom header
+        so that safesearch and the utility stop at the same
+        position, peace & love.
+TODO:: If you have the energy for it, organise CSS (order of declarations),
+        Goodluck if you decide to do it! (can use .bubble for ref)
+*/
 * {
     padding: 0;
     margin: 0;
@@ -53,7 +60,7 @@ svg {width:16px;}#account-logo{width: 20px;}
 /* 180px */
 #bottom-header {
     border-top:1px solid darkblue;
-    padding-left:170px;
+    padding-left:175px;
     height: 40px;
     max-width: 100%;
     display: flex;
@@ -97,32 +104,143 @@ svg {width:16px;}#account-logo{width: 20px;}
     max-width:100%;
     display:flex;
     flex-direction: column;
-    padding-left: 170px;
-    max-width:600px;
+    padding-left: 175px;
+    width:640px;
 }
 #view-counter-container {
     border:1px solid blue;
     padding-bottom: 10px;
     padding-top: 10px;
+    color: rgb(143, 143, 143);
+    font-size: 10.5pt;
+    /* font family is different */
 }
 #main {
     display: flex;
     flex-direction: column;
     border-bottom:1px solid black;
-    max-width: 100%;
+    max-width: 600px;
 }
 .result-wrapper {
     display: flex;
     flex-direction: column;
-    
     height: fit-content;
+    width: fit-content;
+    padding-top: 12px;
+    padding-bottom: 15px;
 }
+.result-link-container {
+    text-decoration: none;
+    width: fit-content;
+}
+.result-link-container:hover .result-name {
+    text-decoration: underline;
+}
+.result-url {
+    display: block;
+    font-size:10.5pt;
+    padding-bottom: 7px;
+}
+.result-url:nth-child(1) {
+    color:rgb(88, 88, 88);
+}
+.inner-result-url {
+    color: rgb(131, 131, 131);
+}
+.result-name {
+    margin-top: 40px;
+    font-size: 15pt;
+    color: rgb(0, 0, 192);
+}
+.result-description {
+    padding-top: 4px;
+    font-size: 10.5pt;
+    line-height: 22px;
+}
+
+
+#related-searches-container {
+    
+}
+#related-searches {
+    
+}
+#related-searches-container a img {
+    width: 100px;
+}
+#related-search-more-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#related-search-more {
+    width:200px;
+    height: 80%;
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 192);
+}
+#related-search-more:hover {
+    background-color: rgba(229, 229, 229, 0.697);
+}
+
+#feedback-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#feedback {
+    border-bottom: 1px solid black;
+    width:87%;
+    height: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin-top: 8px;
+}
+#feedback-container span {
+    color: rgb(158, 158, 158);
+    font-size: 10pt;
+}
+
+#extra-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.bubble-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bubble {
+    background-color: rgb(215, 215, 215);
+    border-radius: 50px;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-left: 70px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
 
 
 
 #footer {
     background-color: grey;
     height: 100px;
-    width: 100%;
-    padding-left:170px;
+    max-width: 100%;
+    padding-left:175px;
 }
