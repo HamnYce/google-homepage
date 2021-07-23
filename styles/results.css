@@ -189,6 +189,9 @@ svg {width:16px;}#account-logo{width: 20px;}
 #related-search-more:hover {
     background-color: rgba(229, 229, 229, 0.697);
 }
+#related-search-more svg {
+    justify-self: flex-start;
+}
 
 #feedback-container {
     height: 50px;
